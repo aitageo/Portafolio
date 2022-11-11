@@ -1,71 +1,30 @@
-h1 {
-    font-size: 3.3rem;
-    margin-top: 2rem;
-}
-
-
-/*body {
-    font-size: 16px;
-    background-image: url('../assets/img/fondo2.jpg');
-}
-*/
-.navbar {
-    background-color: #26ca;
-}
-
-.navbar-nav{
-    margin: auto;
-    color:#fff;
-}
-
 a {
-    color: white;
-    font-size: 2.3rem;
-    font-weight: 430;
-    margin-right: 4.5rem;
+  color: white;
+  font-size: 2.3rem;
+  font-weight: 430;
+  margin-right: 4.5rem;
 }
 
 a:hover{
-    color:#000;
-    background-color: #ffd200;
+  color:#000;
+  background-color: #ffd200;
 }
 
 
 .actived {
-  color:#000;
-  background-color: #ffd200;
+color:#000;
+background-color: #ffd200;
 }
 .fondo{
-    height:19em; background-size:cover; width:auto;
-    background-image:url('../assets/img/fondo2.jpg');
-    background-position:50% 50%;
+  height:19em; background-size:cover; width:auto;
+  background-image:url('../assets/img/fondo2.jpg');
+  background-position:50% 50%;
+}
+
+/* @media only screen and(max-width: 300px){
+  .fondo {
+    display: none;
+    width: auto;
   }
-
-  .central {
-    background-color: #fff;
-    margin: auto;
-    margin-top: 1rem;
-    width: 80rem;
-    height: 55rem;
-    box-shadow: 0 0 3rem black;/* para el sombreado en servicios*/
-    border-left: 1px solid #b7b7b7;
-  }
-
-  .central h1{
-    text-align: center;
-    padding-top: 2rem;
-  }
-
-  .central p {
-    margin: 3rem;
-    font-size: 1.9rem;
-
-  }
-
-  header {
-    position:fixed; 
-    display: block;
-    width: 100%;
-  }
-
-
+}
+*/

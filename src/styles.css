@@ -14,12 +14,80 @@ p {
     font-size: 2.5rem;
 }
 
+
 h1 {
+    font-size: 3.3rem;
     margin-top: 2rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 
-/*pie de pagina */
+.navbar {
+    background-color: #26ca;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-nav{
+    margin: auto;
+    color:#fff;
+}
+
+a {
+    color: white;
+    font-size: 2.3rem;
+    font-weight: 430;
+}
+
+a:hover{
+    color:#000;
+    background-color: #ffd200;
+}
+
+
+.actived {
+  color:#000;
+  background-color: #ffd200;
+}
+.fondo{
+    height:19em; background-size:cover; width:auto;
+    background-image:url('src/assets/img/fondo2.jpg');
+    background-position:50% 50%;
+  }
+
+ /* @media only screen and(max-width: 300px){
+    .fondo {
+      display: none;
+      width: auto;
+    }
+  }
+*/
+  .central {
+    background-color: #fff;
+    margin: auto;
+    margin-top: 1rem;
+    width: 80rem;
+    height: 55rem;
+    box-shadow: 0 0 3rem black;/* para el sombreado en servicios*/
+    border-left: 1px solid #b7b7b7;
+  }
+
+  .central h1{
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .central p {
+    margin: 3rem;
+    font-size: 1.9rem;
+
+  }
+
+  header {
+    position:fixed; 
+    display: block;
+    width: 100%;
+  }
 
 footer {
     width: 75%;
@@ -29,3 +97,43 @@ footer {
     color: #000;
 }
 
+/* seccion formulario*/
+
+
+.container {
+  padding: 3rem;
+}
+
+
+/*.collapse {
+  display: flex;
+  justify-content: space-between;
+}
+*/
+
+.container form {
+  margin: 0 auto;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Yanone Kaffeesatz';
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+
+form {
+  width: 70%;
+
+}
+
+ form label {
+  width: 100%;
+  display: block;
+}
+
+form input[type='text'],[type="number"],[type="email"]{
+  width: 100%;
+}
