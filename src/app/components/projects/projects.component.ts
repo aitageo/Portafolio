@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Project } from 'src/app/models/projects';
+import { ProjectService } from 'src/app/services/project.service';
+import { global } from 'src/app/services/global';
+import { response } from 'express';
 
 @Component({
   selector: 'app-projects',
@@ -7,9 +11,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _projectService:ProjectService) {
+
+   }
 
   ngOnInit(): void {
+   console.log("Componente creado");
+   this.getProject();//llamado del metodo
+   
   }
+
+  getProject(){
+    this._projectService.getProject().subscribe(
+      response=>{
+          console.log(response);
+          
+      },
+
+      err=>{
+        console.log(<any>err);
+        
+
+      }
+    );
+  }
+
+
 
 }

@@ -27,4 +27,11 @@ export class ProjectService {
     return this.http.post(this.url+'save-project',params,{headers:headers});
 
    }
+
+   //recibe un observable
+   getProject():Observable<any>{
+    let headers = new HttpHeaders().set('Content-Type','application/json');//cabeceras
+
+    return this.http.get(this.url+'get_projects',{headers:headers});
+   }
 }
