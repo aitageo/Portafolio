@@ -1,0 +1,13 @@
+.central {
+    background-color: #fff;
+    margin: auto;
+    margin-top: 1rem;
+    width: 90rem;
+    height: 60rem;
+    box-shadow: 0 0 3rem black;/* para el sombreado en servicios*/
+    border-left: 1px solid #b7b7b7;
+  }
+
+  li {
+    list-style: none;
+  }

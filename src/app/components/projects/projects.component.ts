@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Project } from 'src/app/models/projects';
 import { ProjectService } from 'src/app/services/project.service';
 import { global } from 'src/app/services/global';
-import { response } from 'express';
+
 
 @Component({
   selector: 'app-projects',
@@ -10,9 +10,11 @@ import { response } from 'express';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
+  public projects: Project[];
+  public url : String;
 
   constructor(private _projectService:ProjectService) {
-
+    this.url = global.url;
    }
 
   ngOnInit(): void {
@@ -24,6 +26,9 @@ export class ProjectsComponent implements OnInit {
   getProject(){
     this._projectService.getProject().subscribe(
       response=>{
+        if (response) {
+           this.projects = response.projects;
+        }
           console.log(response);
           
       },
