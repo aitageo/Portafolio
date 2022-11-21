@@ -105,11 +105,11 @@ footer {
 }
 
 
-/*.collapse {
+.collapse {
   display: flex;
   justify-content: space-between;
 }
-*/
+
 
 .container form {
   margin: 0 auto;
@@ -136,4 +136,21 @@ form {
 
 form input[type='text'],[type="number"],[type="email"]{
   width: 100%;
+}
+
+.project {
+  display: block;
+  float: left;
+}
+
+.project img {
+  width: 40rem;
+  margin-left: 8rem;
+  
+}
+
+.project p {
+  margin-left: 9rem;
+  font-size: 2rem;
+  width: 25rem;
 }
